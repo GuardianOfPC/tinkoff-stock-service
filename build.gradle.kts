@@ -20,6 +20,8 @@ dependencies {
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation("ru.tinkoff.invest:openapi-java-sdk-java8:0.5.2")
+    implementation("com.squareup.okhttp3:okhttp:4.10.0")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
