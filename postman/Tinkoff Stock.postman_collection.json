@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "0f03622b-35b4-4041-baa4-d09c784c4583",
+		"name": "Tinkoff Stock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20429001"
+	},
+	"item": [
+		{
+			"name": "getStockByTicker",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8004/stocks/SBERS",
+					"host": [
+						"localhost"
+					],
+					"port": "8004",
+					"path": [
+						"stocks",
+						"SBERS"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStocksByTickers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tickers\": [\r\n        \"SBER\", \"YNDX\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8004/stocks/getStocksByTickers",
+					"host": [
+						"localhost"
+					],
+					"port": "8004",
+					"path": [
+						"stocks",
+						"getStocksByTickers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getStocksPrices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"figies\": [\r\n        \"BBG004730N88\", \"BBG006L8G4H1\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8004/prices",
+					"host": [
+						"localhost"
+					],
+					"port": "8004",
+					"path": [
+						"prices"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
