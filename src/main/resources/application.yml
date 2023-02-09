@@ -1,5 +1,0 @@
-server:
-  port: 8004
-
-api:
-  isSandboxModeEnabled: true
