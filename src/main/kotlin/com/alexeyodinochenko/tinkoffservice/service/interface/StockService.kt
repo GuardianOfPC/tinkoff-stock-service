@@ -1,7 +1,6 @@
 package com.alexeyodinochenko.tinkoffservice.service.`interface`
 
 import com.alexeyodinochenko.tinkoffservice.dto.FigiesDto
-import com.alexeyodinochenko.tinkoffservice.dto.StockPriceDto
 import com.alexeyodinochenko.tinkoffservice.dto.StocksDto
 import com.alexeyodinochenko.tinkoffservice.dto.StocksPricesDto
 import com.alexeyodinochenko.tinkoffservice.dto.TickersDto

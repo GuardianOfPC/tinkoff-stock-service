@@ -1,0 +1,35 @@
+type Query {
+    getStockByTicker(ticker: String): Stock
+    getStocksByTickers(tickers: [String]): [Stock]
+    getPrices(figies: [String]): [StockPriceDto]
+}
+
+type StocksDto {
+    tickers: [Stock]
+}
+
+type StockPriceDto {
+    figi: String,
+    price: String
+}
+
+type Stock {
+    ticker: String,
+    figi: String,
+    name: String,
+    type: String,
+    currency: Currency,
+    source: String
+}
+
+enum Currency {
+    RUB
+    USD
+    EUR
+    GBP
+    HKD
+    CHF
+    JPY
+    CNY
+    TRY
+}

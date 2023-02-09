@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class StockController(
+class StockControllerREST(
     private val stockService: StockService
 ) {
     @GetMapping("/stocks/{ticker}")
-    fun getStock(@PathVariable ticker: String): Stock {
+    fun getStockByTicker(@PathVariable ticker: String): Stock {
         return stockService.getStockByTicker(ticker)
     }
 

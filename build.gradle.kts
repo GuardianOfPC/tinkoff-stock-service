@@ -22,6 +22,8 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("ru.tinkoff.invest:openapi-java-sdk-java8:0.5.2")
     implementation("com.squareup.okhttp3:okhttp:4.10.0")
+    implementation("com.graphql-java:graphql-java:20.0")
+    implementation ("org.springframework.boot:spring-boot-starter-graphql")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
 
