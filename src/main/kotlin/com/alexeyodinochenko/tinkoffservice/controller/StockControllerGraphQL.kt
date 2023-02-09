@@ -7,9 +7,9 @@ import com.alexeyodinochenko.tinkoffservice.model.Stock
 import com.alexeyodinochenko.tinkoffservice.service.`interface`.StockService
 import org.springframework.graphql.data.method.annotation.Argument
 import org.springframework.graphql.data.method.annotation.QueryMapping
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.stereotype.Controller
 
-@RestController
+@Controller
 class StockControllerGraphQL(
     private val stockService: StockService
 ) {
